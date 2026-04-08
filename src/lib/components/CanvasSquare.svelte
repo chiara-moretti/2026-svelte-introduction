@@ -18,15 +18,15 @@
 <h3>Canvas Square</h3>
 
 <article>
-    <canvas bind:this(canvas) width="100" height="100"></canvas>
+    <canvas bind:this={canvas} width="100" height="100"></canvas>
 
     <nav>
         <label>
-            Size: <input type="range">
+            Size: <input type="range" bind:value={size}>
         </label>
 
         <label>
-            Color: <input type="color">
+            Color: <input type="color" bind:value={color}>
         </label>
     </nav>
 </article>
